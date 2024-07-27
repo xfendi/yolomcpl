@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #000;
+  font-weight: 500;
+  max-width: 100vw;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  z-index: 1;
+  margin: 0;
+  transition: all 0.5s;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.text-gray {
+  color: #c2c2c2 !important;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+@font-face {
+  font-family: "Daydream";
+  src: url("~/assets/Daydream.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Minecraft";
+  src: url("~/assets/minecraft_font.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("~assets/Metropolis-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.metropolis {
+  font-family: Metropolis, sans-serif;
+}
+.daydream {
+  font-family: Daydream, sans-serif;
+}
+.minecraft {
+  font-family: Minecraft, sans-serif;
+}
+.light-text {
+  color: #000;
+}
+.divider {
+  width: 100%;
+}
+.btn {
+  padding: 0 25px;
+  background: var(--primary-color);
+  border: none;
+  min-width: 125px;
+  height: 50px;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px 4px rgb(80 80 80 / 4%);
+}
+.btn-buy {
+  padding: 0 25px;
+  background: var(--primary-color);
+  border: none;
+  min-width: 125px;
+  height: 50px;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px 4px rgb(80 80 80 / 4%);
+}
+.online-btn {
+  width: 200px;
+  height: 70px;
+  background: #252525;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  align-items: center;
+  border-radius: 15px;
+}
+.online-btn-text {
+  text-align: center;
+  width: 70%;
+}
+.text-primary {
+  color: var(--primary-color);
+}
+.lighter-bg {
+  border-radius: 20px;
+}
+.break-word {
+  word-break: break-word;
+}
+.links-colored a {
+  color: var(--primary-color);
+}
+.green-text {
+  color: #72a763;
+}
+.blob {
+  background: rgba(99, 157, 82, 1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(99, 157, 82, 1);
+  margin: 10px;
+  height: 15px;
+  width: 15px;
+  animation: pulse-green 2s infinite;
+}
+.blob-red {
+  background: rgb(217, 51, 51) !important;
+  box-shadow: 0 0 0 0 rgb(217, 51, 51) !important;
+  animation: none !important;
+}
+@keyframes pulse-green {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(99, 157, 82, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(99, 157, 82, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(99, 157, 82, 0);
+  }
+}
+
+.servers {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  row-gap: 25px;
+  column-gap: 25px;
+}
+
+.server-image img {
+  width: 210px;
+  border-radius: 25px;
+}
+
+.server-link {
+  border-radius: 25px;
+}
+.server-image {
+  transition: all 0.3s;
+}
+.server-image:hover {
+  transform: translateY(-15px);
+}
+
+.container-padrem {
+  padding-right: 12rem;
+  padding-left: 12rem;
+}
+
+.intro-container-title {
+  font-size: 3rem;
+  color: white;
+}
+
+@media screen and (max-width: 1600px) {
+  .container-padrem {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .intro-container-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .intro-container-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro-container-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .intro-container-title {
+    font-size: 1.5rem;
+  }
+}
+
+.input-box {
+  background: white;
+  box-shadow: 6px 6px 10px 4px rgb(80 80 80 / 7%);
+  border-radius: 10px;
+  padding: 15px;
+}
+.input-txt {
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 400;
+  height: 60px;
+  color: black;
+  background: #D9D9D9;
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.section-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
