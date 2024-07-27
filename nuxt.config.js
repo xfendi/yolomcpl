@@ -34,14 +34,14 @@ module.exports = {
     ],
   },
   head: {
-    title: "Yolomc.pl | Innowacyjny serwer BOXPVP", // tytuł strony
+    title: "YOLOMC.PL × Innowacyjny serwer BOXPVP!", // tytuł strony
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: "Epicki szablon VIshop.pl",
+        content: "YOLOMC.PL × Innowacyjny serwer BOXPVP!",
       }, // opis strony dla wyszukiwarek i discorda
     ],
     link: [
